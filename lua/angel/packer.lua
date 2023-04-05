@@ -48,4 +48,8 @@ return require('packer').startup(function(use)
     }
 
     use('ThePrimeagen/vim-be-good')
+    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+        require("toggleterm").setup()
+    end}
+
 end)
